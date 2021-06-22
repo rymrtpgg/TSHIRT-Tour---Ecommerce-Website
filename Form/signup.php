@@ -37,6 +37,11 @@
 	<!-- Start icon link -->
 	<script src="https://kit.fontawesome.com/70196224ec.js" crossorigin="anonymous"></script>
 	<!-End fontawsome link-  -->
+	<!-- jQuery start -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <!-- jQuery End -->
+
 </head>
 <body>
 
@@ -69,39 +74,39 @@
 
 
 	<div class="formBx">
-		<form action="#" method="POST">
-			<h1>Sign In</h1>
+		<form id="form2" action="signup.php" method="POST">
+			<h1>Sign Up</h1>
 
 	            <div class="form-control">
 	                <!-- <label for="username">Username</label> -->
-	                <input type="email" name="username" class="username" placeholder="Username">
+	                <input type="email" name="username" class="username" id="username" placeholder="Username">
 	            </div>
 
 	            <div class="form-control">
 	                <!-- <label for="username">Username</label> -->
-	                <input type="email" name="email" class="email" placeholder="Email@xxx.com">
+	                <input type="email" name="email" class="email" id="email" placeholder="Email@xxx.com">
 	            </div>
 
 	            <div class="form-control">
 	                <!-- <label for="password">Password</label> -->
-	                <input type="password" name="password" class="password" placeholder="Password">
+	                <input type="password" name="password" class="password" id="password" placeholder="Password">
 	            </div>
 
 	            <div class="form-control">
 	                <!-- <label for="password">Password</label> -->
-	                <input type="conf_password" name="conf_password" class="conf_password" placeholder="Conf-Password">
+	                <input type="conf_password" name="conf_password" class="conf_password" id="conf_password" placeholder="Conf-Password">
 	            </div>
 
 	            <div class="form-control">
-		            <input type="submit" value="Login" name="login" class="login">	
+		            <input type="submit" value="Signup" name="login" class="login">	
 	            </div>
 
 	            <div class="separator"></div>
 
 	            <div class="form-control">
-	    		 	<p href="#">You don't have an account? <a href="../index.php">Signin!</a> </p>
+	    		 	<p href="#">You have an account? <a href="../index.php">Signin!</a> </p>
 	    		 	<span>or</span>
-					<!-- <a  id="g" href=<?= $client->createAuthUrl()?> ><i class="fab fa-google"></i> Sign in with Google</a>	    		 	 -->
+	
 	            </div>
 	            
 		</form>
@@ -138,6 +143,12 @@
 		</div>		
 	</div>
 	<!-- Footer End -->
+<style>
+  .error {
+    color: red;
+  }
+</style>
+<script type="text/javascript" src="../frontendvalidation/verifySignup.js"></script>
 
 </body>
 </html>

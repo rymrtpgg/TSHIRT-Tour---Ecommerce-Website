@@ -36,6 +36,10 @@
 	<link rel="stylesheet" href="style/index.css">
 	<link rel="stylesheet" href="/style/font/fontawesome-free-5.15.3-web/css/all.css">
 	<script src="https://kit.fontawesome.com/70196224ec.js" crossorigin="anonymous"></script>	
+	<!-- jQuery start -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <!-- jQuery End -->
 </head>
 <body>
 
@@ -68,7 +72,7 @@
 
 
 	<div class="formBx">
-		<form action="#" method="POST">
+		<form action="#" method="POST" id="form2">
 			<h1>Sign In</h1>
 
 	            <div class="form-control">
@@ -125,5 +129,13 @@
 	</div>
 	<!-- Footer End -->
 
+<style>
+  .error {
+    color: red;
+  }
+</style>
+<script type="text/javascript" src="frontendvalidation/verifySignup.js"></script>
+
+</style>	
 </body>
 </html>
