@@ -6,8 +6,6 @@
 body {
     margin: 5px;
     height: 100vh;
-    background-image: url("../img/bg/bg.jpg");
-    background-repeat: no-repeat;
 }
 
 a { text-decoration: none; }
@@ -46,70 +44,26 @@ a { text-decoration: none; }
 /*Body start*/
 
 .formBx {
-    border: 1px solid black;
+    border: 6px solid black;
     height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("../img/bg/bg.jpg");
+    height: 100vh;
+    background-repeat: repeat;
+
 }
-form h1 {
-    text-align: center;
-    /*margin-bottom: 50px;*/
-    
-}
+
+.formBx h1 { text-align: center; }
 form {
-    background: linear-gradient(yellow, green);
-    width: 40%;
-    height: 70%;
-    /*border: 1px solid black;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 20px;
-}
-form .form-control {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    /*border: 1px solid black;*/
-    padding: 20px;
-}
-form input {
-    width: 80%;
-    padding: 8px;
-    border-radius: 30px;
-    outline: none;
-    border: 1px solid gray;
-}
-
-form .login {
-    align-self: center;
-}
-
-.googleForm {
-    margin: 4px 0;
-    width: 100%;
-    background: gray;
-}
-.googleForm a {
-    margin: 10px 0;
-    /*border: 1px solid black;*/
-    text-align: center;
-    color: white;
-    align-items: center;
-}
-
-.separator {
-    align-self: center;
-    width: 100%;
-}
-
-.separator .sep {
-    text-align: center;
-    width: 80%;
+    width: 400px;
+    height: 400px;
     border: 1px solid black;
 }
+
+
 /*Body End*/
 
 

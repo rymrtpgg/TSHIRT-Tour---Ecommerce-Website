@@ -34,6 +34,7 @@
 	<title>Document</title>
 
 	<link rel="stylesheet" href="style/index.css">
+	<link rel="stylesheet" href="/style/font/fontawesome-free-5.15.3-web/css/all.css">
 </head>
 <body>
 
@@ -60,38 +61,25 @@
 
 
 	<!-- Body Start -->
+
+
 	<div class="formBx">
 		<form action="#" method="POST">
 			<h1>Sign In</h1>
-			<div class="forms">
 
-	            <div class="form-control">
-	                <!-- <label for="username">Username</label> -->
-	                <input type="email" name="username" class="username" placeholder="Username">
-	            </div>
 
-	            <div class="form-control">
-	                <!-- <label for="password">Password</label> -->
-	                <input type="password" name="password" class="password" placeholder="Pasword">
-	            </div>
-	            <div class="form-control">
-		            <input type="submit" value="Login" name="login" class="login">	
-	            </div>
-	            
-	            <div class="separator"><div class="sep"></div> </div>
-
-	    		 <div class="googleForm form-control">
-	    		 	<div class=""></div>
-	    		 	<p href="#">You don't have an account? <a href="#">Signup!</a> </p>
-					<a href=<?= $client->createAuthUrl()?> >Sign in with Google</a>
-		        </div>
-			</div>
 		</form>
 
 
 	</div>
 
 
+	    		 <div class="googleForm form-control">
+	    		 	
+	    		 	<p href="#">You don't have an account? <a href="#">Signup!</a> </p>
+	    		 	<i class="fab fa-google"></i>
+					<a  id="g" href=<?= $client->createAuthUrl()?> >Sign in with Google</a>
+		        </div>
 
 	<!-- Body End -->
 	
