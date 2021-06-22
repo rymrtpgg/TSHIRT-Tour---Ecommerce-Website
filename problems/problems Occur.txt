@@ -1,3 +1,7 @@
-Problem:
+Problem: june 22
 	fatal: refusing to merge unrelated histories” Git error: 
 	solution: git pull origin master --allow-unrelated-histories
+
+Fetching on github: june 22
+	git remote add coworker_branch "urlhere"
+	git merge coworker_branch/main
