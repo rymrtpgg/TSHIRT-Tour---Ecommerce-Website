@@ -35,27 +35,31 @@
 
 	<link rel="stylesheet" href="style/index.css">
 	<link rel="stylesheet" href="/style/font/fontawesome-free-5.15.3-web/css/all.css">
+	<script src="https://kit.fontawesome.com/70196224ec.js" crossorigin="anonymous"></script>	
 </head>
 <body>
 
 	<!-- Header Start -->
-    <div class="header">
-        <!-- Logo -->
-        <div class="logo">
-            <h1>Logo</h1>
-        </div>
-    </div>
+	<div class="navBx">
+	    <div class="header">
+	        <!-- Logo -->
+	        <div class="logo">
+	            <h1>Logo</h1>
+	        </div>
+	    </div>
 
-    <!-- Categories -->
-    <div class="category">
-        <ul>
-            <li><a href="#">WOMEN</a></li>
-            <li><a href="#">MEN</a></li>
-            <li><a href="#">KIDS GIRL</a></li>
-            <li><a href="#">KIDS BOY</a></li>
-            <li><a href="#">BRANDS</a></li>
-        </ul>
-    </div>
+	    <!-- Categories -->
+	    <div class="category">
+	        <ul>
+	            <li><a href="#">WOMEN</a></li>
+	            <li><a href="#">MEN</a></li>
+	            <li><a href="#">KIDS GIRL</a></li>
+	            <li><a href="#">KIDS BOY</a></li>
+	            <li><a href="#">BRANDS</a></li>
+	        </ul>
+	    </div>		
+	</div>
+
     
 	<!-- Header End -->
 
@@ -67,45 +71,60 @@
 		<form action="#" method="POST">
 			<h1>Sign In</h1>
 
+	            <div class="form-control">
+	                <!-- <label for="username">Username</label> -->
+	                <input type="email" name="username" class="username" placeholder="Username">
+	            </div>
 
+	            <div class="form-control">
+	                <!-- <label for="password">Password</label> -->
+	                <input type="password" name="password" class="password" placeholder="Pasword">
+	            </div>
+
+	            <div class="form-control">
+		            <input type="submit" value="Login" name="login" class="login">	
+	            </div>
+	            <div class="separator"></div>
+
+	            <div class="form-control">
+	    		 	
+	    		 	<p href="#">You don't have an account? <a href="#">Signup!</a> </p>
+	    		 	<span>or</span>
+					<a  id="g" href=<?= $client->createAuthUrl()?> ><i class="fab fa-google"></i> Sign in with Google</a>	    		 	
+	            </div>
+	            
 		</form>
 
 
 	</div>
 
-
-	    		 <div class="googleForm form-control">
-	    		 	
-	    		 	<p href="#">You don't have an account? <a href="#">Signup!</a> </p>
-	    		 	<i class="fab fa-google"></i>
-					<a  id="g" href=<?= $client->createAuthUrl()?> >Sign in with Google</a>
-		        </div>
-
 	<!-- Body End -->
 	
 
 	<!-- Footer Start -->
-	<div class="footer">
-		<div class="cat">
-			<h3>Catergory 1 </h3>
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Quisquam reiciendis laborum quas voluptatem consequatur explicabo vitae dignissimos, labore temporibus, vero quo repudiandae repellat harum dolorum, optio quidem vel nisi accusantium.</p>
+	<div class="footerBx">
+		<div class="footer">
+			<div class="cat">
+				<h3>Catergory 1 </h3>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Quisquam reiciendis laborum quas voluptatem consequatur explicabo vitae dignissimos, labore temporibus, vero quo repudiandae repellat harum dolorum, optio quidem vel nisi accusantium.</p>
 
+			</div>
+			<div class="cat">
+				<h3>Catergory 1 </h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem nihil, doloremque aperiam nulla, sed, nam commodi at consectetur cupiditate quos, dolores dolorum doloribus modi. Laborum odit voluptas, voluptatibus sapiente!</p>
+			</div>
+			<div class="cat">
+				<h3>Catergory 1 </h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sit quidem accusantium quod nulla, quis quasi officia a magnam rem alias! Velit voluptatum aspernatur, officiis illo ut, nobis alias fugit.</p>
+			</div>
+			<div class="cat">
+				<h3>Social Media</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, incidunt perspiciatis rem consectetur quidem, provident labore veritatis cupiditate voluptates, hic alias corporis quae. Quisquam fugit, labore unde consequatur, repudiandae accusantium.</p>
+			</div>
 		</div>
-		<div class="cat">
-			<h3>Catergory 1 </h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem nihil, doloremque aperiam nulla, sed, nam commodi at consectetur cupiditate quos, dolores dolorum doloribus modi. Laborum odit voluptas, voluptatibus sapiente!</p>
-		</div>
-		<div class="cat">
-			<h3>Catergory 1 </h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sit quidem accusantium quod nulla, quis quasi officia a magnam rem alias! Velit voluptatum aspernatur, officiis illo ut, nobis alias fugit.</p>
-		</div>
-		<div class="cat">
-			<h3>Catergory 1 </h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, incidunt perspiciatis rem consectetur quidem, provident labore veritatis cupiditate voluptates, hic alias corporis quae. Quisquam fugit, labore unde consequatur, repudiandae accusantium.</p>
-		</div>
-	</div>
-	<div class="smallFooter">
-		<label for="">Copyright</label>
+		<div class="smallFooter">
+			<label for="">© Tshirt Tour 2021</label>
+		</div>		
 	</div>
 	<!-- Footer End -->
 
