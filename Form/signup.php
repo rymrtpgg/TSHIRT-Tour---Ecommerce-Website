@@ -151,4 +151,7 @@
 <script type="text/javascript" src="../frontendvalidation/verifySignup.js"></script>
 
 </body>
+<script>
+	
+</script>
 </html>
