@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 5px;
+    height: 100vh;
+    background-image: url("../img/bg/bg.jpg");
+    background-repeat: no-repeat;
+}
+
+a { text-decoration: none; }
+
+/*Header Start*/
+.header{
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    background: #E5E5E5;
+    color: #000;
+}
+
+.category ul{
+    background: #E5E5E1;
+    display: flex;
+    justify-content: space-around;
+    /*border: 1px solid black;*/
+}
+.category li {
+    text-align: center;
+    list-style-type: none;
+    /*border: 1px solid black;*/
+    width: 100%;
+}
+.category li:hover {
+    background: linear-gradient(#E5E5E5, #A5E5E5);
+}
+.category a {
+    text-decoration: none;
+    color: black;
+}
+/*Header End*/
+
+
+/*Body start*/
+
+.formBx {
+    border: 1px solid black;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form h1 {
+    text-align: center;
+    /*margin-bottom: 50px;*/
+    
+}
+form {
+    background: linear-gradient(yellow, green);
+    width: 40%;
+    height: 70%;
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+form .form-control {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    padding: 20px;
+}
+form input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+form .login {
+    align-self: center;
+}
+
+.googleForm {
+    margin: 4px 0;
+    width: 100%;
+    background: gray;
+}
+.googleForm a {
+    margin: 10px 0;
+    /*border: 1px solid black;*/
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+.separator {
+    align-self: center;
+    width: 100%;
+}
+
+.separator .sep {
+    text-align: center;
+    width: 80%;
+    border: 1px solid black;
+}
+/*Body End*/
+
+
+
+/*Footer Start*/
+.footer {
+    display: flex;
+    height: auto;
+    width: 100%;
+    background: #E5E5E5;
+}
+
+.cat {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.smallFooter {
+    padding: 5px;
+    text-align: center;
+    background: linear-gradient(#ffff, green);
+}
+/*Footer End*/
