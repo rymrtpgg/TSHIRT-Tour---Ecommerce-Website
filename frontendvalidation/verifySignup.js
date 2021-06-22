@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     $('#form2').validate({
       rules: {
@@ -24,7 +23,7 @@ $(document).ready(function () {
           minlength: 'Password must be at least 8 characters long.',
         },
         conf_password: {
-          required: 'Please enter Password.',
+          required: 'Please enter Cofirm Password.',
           minlength: 'Password must be at least 8 characters long.',
         }        
       },

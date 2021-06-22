@@ -94,7 +94,7 @@
 
 	            <div class="form-control">
 	                <!-- <label for="password">Password</label> -->
-	                <input type="conf_password" name="conf_password" class="conf_password" id="conf_password" placeholder="Conf-Password">
+	                <input type="password" name="conf_password" class="conf_password" id="conf_password" placeholder="Conf-Password">
 	            </div>
 
 	            <div class="form-control">
