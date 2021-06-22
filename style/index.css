@@ -79,7 +79,7 @@ a { text-decoration: none; }
 
 }
 
-.formBx h1 { text-align: center; text-shadow: 1px 2px whitesmoke; padding: 10px;}
+.formBx h1 { text-align: center; text-shadow: 1px 2px whitesmoke; padding: 10px; text-transform: uppercase;}
 
 form {
 
@@ -162,6 +162,7 @@ form {
 }
 
 .smallFooter {
+    border-top: 1px solid gray;
     padding: 5px;
     text-align: center;
     /*background: linear-gradient(#ffff, green);*/

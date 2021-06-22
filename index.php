@@ -78,7 +78,7 @@
 
 	            <div class="form-control">
 	                <!-- <label for="password">Password</label> -->
-	                <input type="password" name="password" class="password" placeholder="Pasword">
+	                <input type="password" name="password" class="password" placeholder="Password">
 	            </div>
 
 	            <div class="form-control">
