@@ -1,30 +1,30 @@
 <?php
-    require_once('vendor/autoload.php');
+ //    require_once('vendor/autoload.php');
 
-	$clientID = "716305721047-bqhs8stbfa0tp2j2l4alcmv62gaeejka.apps.googleusercontent.com";
-	$clientSecret = "I_AYXC7JW4SVh1q7By21gKPt";
+	// $clientID = "716305721047-bqhs8stbfa0tp2j2l4alcmv62gaeejka.apps.googleusercontent.com";
+	// $clientSecret = "I_AYXC7JW4SVh1q7By21gKPt";
 
-	$client = new Google_Client();
-	$client->setClientId($clientID);
-	$client->setClientSecret($clientSecret);
-	$client->setRedirectUri("http://localhost/TSHIRT-Tour---Ecommerce-Website/index.php");
-	$client->addScope('profile');
-	$client->addScope('email');
+	// $client = new Google_Client();
+	// $client->setClientId($clientID);
+	// $client->setClientSecret($clientSecret);
+	// $client->setRedirectUri("http://localhost/TSHIRT-Tour---Ecommerce-Website/index.php");
+	// $client->addScope('profile');
+	// $client->addScope('email');
 
-	if(isset($_GET['code'])){
+	// if(isset($_GET['code'])){
 
-		$token = $client->fetchAccessTokenWithAuthCode($_GET['code']);
-		$client->setAccessToken($token);
+	// 	$token = $client->fetchAccessTokenWithAuthCode($_GET['code']);
+	// 	$client->setAccessToken($token);
 
-		$auth = new Google_Service_Oauth2($client);
+	// 	$auth = new Google_Service_Oauth2($client);
 
-		$google_info = $auth->userinfo->get();
+	// 	$google_info = $auth->userinfo->get();
 
-		$email = $google_info->email;
+	// 	$email = $google_info->email;
 
-		var_dump($email);exit;
+	// 	var_dump($email);exit;
 
-	}
+	// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,9 +33,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 
-	<link rel="stylesheet" href="style/index.css">
-	<link rel="stylesheet" href="/style/font/fontawesome-free-5.15.3-web/css/all.css">
-	<script src="https://kit.fontawesome.com/70196224ec.js" crossorigin="anonymous"></script>	
+	<link rel="stylesheet" href="../style/index.css">
+	<!-- Start icon link -->
+	<script src="https://kit.fontawesome.com/70196224ec.js" crossorigin="anonymous"></script>
+	<!-End fontawsome link-  -->
 </head>
 <body>
 
@@ -77,22 +78,35 @@
 	            </div>
 
 	            <div class="form-control">
+	                <!-- <label for="username">Username</label> -->
+	                <input type="email" name="email" class="email" placeholder="Email@xxx.com">
+	            </div>
+
+	            <div class="form-control">
 	                <!-- <label for="password">Password</label> -->
 	                <input type="password" name="password" class="password" placeholder="Password">
 	            </div>
 
 	            <div class="form-control">
-		            <input type="submit" value="Login" name="login" class="login">
-		        </div>
+	                <!-- <label for="password">Password</label> -->
+	                <input type="conf_password" name="conf_password" class="conf_password" placeholder="Conf-Password">
+	            </div>
+
+	            <div class="form-control">
+		            <input type="submit" value="Login" name="login" class="login">	
+	            </div>
 
 	            <div class="separator"></div>
 
 	            <div class="form-control">
-	    		 	<p href="#">You don't have an account? <a href="Form/signup.php">Signup!</a> </p>
+	    		 	<p href="#">You don't have an account? <a href="../index.php">Signin!</a> </p>
 	    		 	<span>or</span>
-					<a  id="g" href=<?= $client->createAuthUrl()?> ><i class="fab fa-google"></i> Sign in with Google</a>	    		 	
+					<!-- <a  id="g" href=<?= $client->createAuthUrl()?> ><i class="fab fa-google"></i> Sign in with Google</a>	    		 	 -->
 	            </div>
+	            
 		</form>
+
+
 	</div>
 
 	<!-- Body End -->
