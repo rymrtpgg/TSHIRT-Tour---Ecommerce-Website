@@ -1,5 +1,7 @@
 <?php declare(strict_types = 1);
 
+namespace core\users;
+
 session_start();
 require_once(dirname(dirname(__DIR__)). "/vendor/autoload.php");
 
