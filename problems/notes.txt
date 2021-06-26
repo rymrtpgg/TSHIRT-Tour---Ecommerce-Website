@@ -1,0 +1,13 @@
+form -> jquery -> api -> classes.
+
+
+find / view errors:
+	var_dam();
+	error_log /opt/lampp/logs$ 
+
+
+
+
+NOTES: 
+	* json
+	* api
