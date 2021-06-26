@@ -34,6 +34,7 @@
 	<title>Document</title>
 
 	<link rel="stylesheet" href="style/index.css">
+	<link rel="stylesheet" href="style/homepage.css">	
 	<link rel="stylesheet" href="/style/font/fontawesome-free-5.15.3-web/css/all.css">
 	<script src="https://kit.fontawesome.com/70196224ec.js" crossorigin="anonymous"></script>	
 	<!-- jQuery start -->
@@ -55,10 +56,10 @@
 	    <!-- Categories -->
 	    <div class="category">
 	        <ul>
-	            <li><a href="#">WOMEN</a></li>
-	            <li><a href="#">MEN</a></li>
-	            <li><a href="#">KIDS GIRL</a></li>
-	            <li><a href="#">KIDS BOY</a></li>
+	            <li><a href="#women">WOMEN</a></li>
+	            <li><a href="#men">MEN</a></li>
+	            <li><a href="#kidsG">KIDS GIRL</a></li>
+	            <li><a href="#kidsB">KIDS BOY</a></li>
 	            <li><a href="#">BRANDS</a></li>
 	        </ul>
 	    </div>		
@@ -71,34 +72,21 @@
 	<!-- Body Start -->
 
 
-	<div class="formBx">
-		<form action="#" method="POST" id="form2">
-			<h1>Sign In</h1>
-
-	            <div class="form-control">
-	                <!-- <label for="username">Username</label> -->
-	                <input type="text" name="username" class="username" placeholder="Username">
-	            </div>
-
-	            <div class="form-control">
-	                <!-- <label for="password">Password</label> -->
-	                <input type="password" name="password" class="password" placeholder="Password">
-	            </div>
-
-	            <div class="form-control">
-		            <input type="submit" value="Login" name="login" class="login">
-		        </div>
-
-	            <div class="separator"></div>
-
-	            <div class="form-control">
-	    		 	<p href="#">You don't have an account? <a href="Form/signup.php">Signup!</a> </p>
-	    		 	<span>or</span>
-					<a  id="g" href=<?= $client->createAuthUrl()?> ><i class="fab fa-google"></i> Sign in with Google</a>	    		 	
-	            </div>
-		</form>
+	<div class="contentBx">
+		
 	</div>
-
+	<div class="contentBx">
+		<h1 id="men">Men</h1>
+	</div>	
+	<div class="contentBx">
+		<h1 id="women">Women</h1>
+	</div>		
+	<div class="contentBx">
+		<h1 id="kidsG">Kids Girl</h1>
+	</div>
+	<div class="contentBx">
+		<h1 id="kidsB">Kids Boy</h1>
+	</div>			
 	<!-- Body End -->
 	
 

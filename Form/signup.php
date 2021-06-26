@@ -79,7 +79,7 @@
 
 	            <div class="form-control">
 	                <!-- <label for="username">Username</label> -->
-	                <input type="email" name="username" class="username" id="username" placeholder="Username">
+	                <input type="text" name="username" class="username" id="username" placeholder="Username">
 	            </div>
 
 	            <div class="form-control">
@@ -121,21 +121,37 @@
 	<div class="footerBx">
 		<div class="footer">
 			<div class="cat">
-				<h3>Catergory 1 </h3>
+				<h1>TShirt Tour</h1>
 				<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Quisquam reiciendis laborum quas voluptatem consequatur explicabo vitae dignissimos, labore temporibus, vero quo repudiandae repellat harum dolorum, optio quidem vel nisi accusantium.</p>
 
 			</div>
 			<div class="cat">
-				<h3>Catergory 1 </h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem nihil, doloremque aperiam nulla, sed, nam commodi at consectetur cupiditate quos, dolores dolorum doloribus modi. Laborum odit voluptas, voluptatibus sapiente!</p>
+				<h3>Customer Service</h3>
+				<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem nihil, doloremque aperiam nulla, sed, nam commodi at consectetur cupiditate quos, dolores dolorum doloribus modi. Laborum odit voluptas, voluptatibus sapiente!</p> -->
+				<br>
+				<ul class="customer">
+					<li><a href="#">FAQ </a></li>
+					<li><a href="#">Size Guide </a></li>
+					<li><a href="#">Exchanges & Returns </a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
 			</div>
 			<div class="cat">
-				<h3>Catergory 1 </h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sit quidem accusantium quod nulla, quis quasi officia a magnam rem alias! Velit voluptatum aspernatur, officiis illo ut, nobis alias fugit.</p>
+				<h3>About Us</h3>
+				<br>
+				<ul class="customer">
+					<li><a href="#">Who We Are </a></li>
+					<li><a href="#">Terms & Condtions </a></li>
+					<li><a href="#">Privacy & Policy</a></li>
+				</ul>
 			</div>
 			<div class="cat">
 				<h3>Social Media</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, incidunt perspiciatis rem consectetur quidem, provident labore veritatis cupiditate voluptates, hic alias corporis quae. Quisquam fugit, labore unde consequatur, repudiandae accusantium.</p>
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
 			</div>
 		</div>
 		<div class="smallFooter">

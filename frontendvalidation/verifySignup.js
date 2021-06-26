@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('#form2').validate({
       rules: {
         username: {
-          required: true
+          required: true,
         },
          email: {
           required: true,
@@ -17,7 +17,11 @@ $(document).ready(function () {
         }
       },
       messages: {
-        username: 'Please enter Name.',
+        username: {
+          
+          required: 'Please enter Name.'
+
+      },
         password: {
           required: 'Please enter Password.',
           minlength: 'Password must be at least 8 characters long.',

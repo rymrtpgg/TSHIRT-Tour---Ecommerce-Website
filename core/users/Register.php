@@ -62,6 +62,7 @@ class Register extends Db
     public function hashPassword(): void {
 
         $this->hashPassword =  password_hash($this->password, PASSWORD_DEFAULT);
+                                
 
     }
 
