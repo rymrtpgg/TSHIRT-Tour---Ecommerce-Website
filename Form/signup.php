@@ -79,7 +79,7 @@
 
 	            <div class="form-control">
 	                <!-- <label for="username">Username</label> -->
-	                <input type="email" name="username" class="username" id="username" placeholder="Username">
+	                <input type="text" name="username" class="username" id="username" placeholder="Username">
 	            </div>
 
 	            <div class="form-control">
@@ -98,7 +98,7 @@
 	            </div>
 
 	            <div class="form-control">
-		            <input type="submit" value="Signup" name="login" class="login">	
+					<input type="button" value="Signup" name="login" class="login">	
 	            </div>
 
 	            <div class="separator"></div>
@@ -152,6 +152,45 @@
 
 </body>
 <script>
-	
+	$(document).ready(function(){
+
+		form = $("#form2")
+
+		form.on("click",function(e) {
+
+        	e.preventDefault();
+
+			var username = $('#username').val();
+			var email = $('#email').val();
+			var password = $('#password').val();
+			var conf_password = $('#conf_password').val();
+			
+
+			if(username && email && password && conf_password){
+				return false;
+			}else{
+
+				$.ajax({
+					url: "http://localhost/TSHIRT-TOUR---ECOMMERCE-WEBSITE/api/user/signup.php",
+					type: "POST",
+					data:{
+						"username": username,
+						"email": email,
+						"password": password,
+						"conf_password": conf_password,
+					},
+					success: function(response){
+						console.log(response);
+					},
+					error: function(response){
+						console.log(response);
+					}
+				});
+
+			}
+
+		});
+
+	});
 </script>
 </html>
